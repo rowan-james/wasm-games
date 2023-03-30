@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>maze-war</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<style>
+			html, body, #app {
+				height: 100%;
+				width: 100%;
+			}
+
+			* {
+				box-sizing: border-box;
+				outline: 0;
+				margin: 0;
+			}
+
+			#app {
+				background-color: #111;
+				display: flex;
+        flex-direction: column;
+			}
+
+			.container {
+				flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<main id="app">
+			<div class="container"></div>
+		</main>
+		<script async type="module" src="/initialize.js"></script>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>space-invaders</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<style>
+		html,
+		body,
+		#app {
+			height: 100%;
+			width: 100%;
+		}
+
+		* {
+			box-sizing: border-box;
+			outline: 0;
+			margin: 0;
+		}
+
+		#app {
+			background-color: #111;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		body {
+			height: 100%;
+			background: #2c3e50;
+			padding: 60px;
+			font-family: sans-serif;
+			display: flex;
+			flex-direction: column;
+		}
+
+		canvas {
+			border: 2px solid white;
+		}
+
+		#container {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		header {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			color: white;
+		}
+
+		p {
+			font-size: 3vmin;
+			margin: 2%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<main id="app">
+		<div class="container"></div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/4.0.0/immutable.min.js"
+		integrity="sha512-YKSQecLkGrea3bKro680kYyxBrlTbD0coQvdrpZV5swPcuZbAJQurJHtfinPSjDTGBz2K4Cjs4INsjm5nhB2kg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/2.0.9/Bacon.js"></script>
+	<script async type="module" src="initialize.js"></script>
+</body>
+
+</html>
